@@ -1,0 +1,508 @@
+* {
+	font-family: monospace;
+}
+li {
+	list-style: none;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+/* CSS Header ======================================================*/
+header {
+	height: 65px;
+	width: 100%;
+	background-color: #1C658C;
+}
+
+.header-left {
+	float: left;
+}
+
+.header-left span {
+	color: #6FB2D2;
+	font-family: 'fantasy';
+}
+.header-left h1 {
+	font-family: 'fantasy';
+	font-size: 25px;
+}
+.header-right {
+	float: right;
+	background-color: #1C658C;
+	transition: all 0.5;
+
+}
+.header-right li {
+	float: left;
+	padding-top: 15px;
+}
+.input-search {
+	padding:8px 15px;
+    background: #D8D2CB;
+    border:0px solid #dbdbdb;
+}
+.btn-search {
+	position:relative;
+    padding:6px 15px;
+    left:-8px;
+    border:2px solid #6FB2D2;
+    background-color:#6FB2D2;
+    color: #ffffff;
+}
+.btn-search:hover {
+    background-color:#fafafa;
+    color:#207cca;
+}
+
+
+/* CSS TOP ==========================================================*/
+.top-main {
+	padding: 215px 0;
+	background-size: cover;
+	background-image: url("https://p4.wallpaperbetter.com/wallpaper/101/256/49/city-skyscrapers-night-light-wallpaper-preview.jpg");
+	text-align: center;
+}
+.top-main .container {
+	width: 1170px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+
+.box-top {
+	background-color: #398AB9;
+	opacity: 0.7;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	height: 100px;
+	border-radius: 4px;
+}
+.box-top h1 {
+
+	color: white;
+	opacity: 100%;
+	font-size: 45px;
+	letter-spacing: 5px;
+	margin-bottom: 10px;
+}
+.box-top2 {
+	border-radius: 4px;
+	background-color: #398AB9;
+}
+.box-top2 p {
+	padding: 10px 0;
+	color: white;
+	opacity: 100%;	
+}
+.btn-top {
+	border: 2px solid white;
+	padding: 12px 24px; 
+	display: inline-block;
+	border-radius: 6px; 
+	background-color: #1C658C;
+}
+.btn-top a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #00FFDD;
+}
+.btn-top:hover {
+	background-color:#fafafa;
+    
+}
+
+/* CSS CONTENT =====================================================*/
+
+/*Deskripsi section*/
+
+.description {
+    background-color: #D8D2CB  ;
+	
+}
+.description .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 20px;
+    max-width: 1200px;
+    margin: auto;
+	
+}
+.desc {
+    flex: auto;
+    width: 50%;
+    margin: auto;
+    
+}
+.desc img {
+    width: 100%;
+}
+
+.desc p {
+  font-size: 26px;
+  margin-left: 50px;
+  font-family: 'Poppins', sans-serif;
+}
+.desc h1 {
+    margin-left: 50px;
+	font-family: 'Poppins', sans-serif;
+}
+
+/* untuk layar ukuran tablet */
+@media (max-width: 1000px) {
+    .description p {
+        font-size: 18px;
+    }
+    
+}
+
+/* untuk layar ukuran handphone */
+@media (max-width: 670px) {
+	.desc {
+		width: 100%;
+		text-align: center;
+	}
+	.desc img {
+		width: 70%;
+	}
+    .description p {
+        font-size: 14px;
+		margin: 10px auto;
+    }
+    .description h1 {
+        font-size: 20px;
+		margin: 10px auto;
+    }
+}
+
+
+
+
+/* CSS FOOTER =====================================================*/
+footer {
+	height: 300px;
+	background-color: #EEEEEE;
+}
+.footer-top {
+	height: 80%;
+	border-bottom: 1px solid #D8D2CB;
+}
+.logo{
+	float: left;
+	padding: 60px 0 0 60px;
+}
+.logo img {
+	width: 124px;
+}
+.contact {
+	float: right;
+	padding: 40px;
+	border: 1px solid black;
+	border-radius: 40px;
+	border-style: dashed;
+	padding: 0 30px 0 0;
+	margin: 30px 40px 0 0;
+}
+.contact h5 {
+	text-align: center;
+	font-size: 15px;
+}
+.contact li {
+	display: inline;
+}
+.contact-icon {
+	width: 20px;
+	display: inline;
+	padding: 20px;
+	background-color: #D8D2CB;
+	border-radius: 10px;
+}
+.contact-icon:hover {
+	background-color: rgba(57, 138, 185, 0.9);
+}
+.copyright-icon {
+	width: 10px;
+}
+.footer-bottom {
+	text-align: center;
+}
+
+/* CSS TEAM =====================================================*/
+.teams .container{
+	width: 100%;
+	padding: 0 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .teams .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .teams .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .teams .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .teams .container {
+        max-width: 1140px;
+    }
+}
+
+.row{
+	display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+	margin: 0 auto;
+	text-align: center;
+	justify-content: center;
+}
+
+.column{
+	position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 576px) {
+    .column {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .column {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+@media (min-width: 992px) {
+    .column {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+.section-title{
+	width: 100%;
+	text-align: center;
+	padding: 45px 0 30px 0;
+}
+
+.section-title h1{
+	color: #398AB9;
+	font-size: 50px;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 5px;
+	margin-bottom: 5px;
+}
+
+@media(max-width: 768px){
+	.section-title h1{
+		font-size: 40px;
+		letter-spacing: 3px;
+	}
+}
+
+@media(max-width: 576px){
+	.section-title h1{
+		font-size: 30px;
+		letter-spacing: 2px;
+	}
+}
+
+.team{
+	text-align: center;
+    margin-bottom: 30px;
+    border-radius: 5px;
+	height: 600px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.team .team-img{
+	position: relative;
+    font-size: 0;
+    border-radius: 5px 5px 0 0;
+}
+
+.team .team-img img{
+	width: 100%;
+	height: 300px;
+	border-radius: 5px 5px 0 0;
+}
+
+.team .team-social{
+	position: absolute;
+    width: 250px;
+    height: 300px;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, .5);
+    transition: all .3s;
+    font-size: 0;
+    z-index: 1;
+    opacity: 0;
+}
+
+.team:hover .team-social{
+	opacity: 1;
+}
+
+.team .team-social a{
+	display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    padding: 11px 0 10px 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 16px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: all .3s;
+    margin-top: 50px;
+}
+
+.team .team-social a.social-linkedin{
+	background: #3f729b;
+}
+
+.team .team-social a.social-instagram{
+	background: #3f729b;
+}
+
+.team .team-social a:last-child{
+	margin-right: 0;
+}
+
+.team:hover .team-social a{
+	margin-top: 0;
+}
+
+.team .team-social a:hover{
+	color: #222;
+	background: #fff;
+}
+
+.team .team-content{
+	padding: 20px;
+}
+
+.team .team-content h2{
+	font-size: 25px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	letter-spacing: 2px;
+	height: 50px;
+}
+
+.team .team-content h3{
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	color: #1C658C;
+}
+
+.team .team-content h4{
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+}
+
+.team .team-content p{
+	font-size: 14px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	line-height: 22px;
+	font-style: italic;
+	height: 80px;
+}
+
+/* CSS VISI MISI=====================================================*/
+
+.box-profile {
+	padding: 50px 10px;
+    padding-top: 50px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+}
+
+.bg-warna-satu-tr {
+    background-color: #f4fbfb;
+}
+
+.bg-warna-dua {
+    background-color: #00a6b5;
+}
+
+.box-visimisi {
+    border-radius: 4px;
+    text-align: center;
+}
+.visimisi {
+	padding: 50px 30px;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    border-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    color: #fff;
+    text-align: center;
+}
+
+.visimisi h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+.visimisi p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 37px;
+    letter-spacing: 1px;
+}
+.visimisi:before {
+    content: " ";
+    width: 186px;
+    height: 208px;
+    border-radius: 20px;
+    background-color: #3cdcde;
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 24.3%;
+}
